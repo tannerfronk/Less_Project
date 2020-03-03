@@ -1,0 +1,36 @@
+/* Nav Bar CSS */
+.header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 1px black;
+    background-color: @misc;
+    
+    .logo {
+        display: flex;
+        flex-direction: column;
+        padding-left: @leftPadding;
+        padding-top: 2%;
+        
+        h1 {
+            font-size: 1.8rem;
+            color: @fontMain;
+        }
+    }
+    
+    .navBar {
+        display: flex;
+        width: 40rem;
+        justify-content: space-between;
+        padding-top: @navPadding;
+        padding-bottom: @navPadding;
+        padding-left: @leftPadding;
+        color: @bodyText;
+        
+        a {
+            color: @bodyText;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+    }
+}
+
