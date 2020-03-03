@@ -140,7 +140,6 @@ html {
 .header {
   display: flex;
   flex-direction: row;
-  border-bottom: solid 1px black;
   background-color: #EAE7DC;
 }
 .header .logo {
@@ -155,7 +154,7 @@ html {
 }
 .header .navBar {
   display: flex;
-  width: 40rem;
+  width: 45rem;
   justify-content: space-between;
   padding-top: 4%;
   padding-bottom: 4%;
@@ -168,17 +167,18 @@ html {
   font-size: 1.2rem;
 }
 body {
+  margin: auto;
   background-color: #D8C3A5;
 }
 body .grayBox {
-  height: 2.6rem;
+  height: 2.2rem;
   max-width: 100%;
   background-color: gray;
 }
 body .message {
   height: 3rem;
   max-width: 100%;
-  background-color: #E98074;
+  background-color: #E85A4F;
 }
 body .message h1 {
   display: flex;
@@ -186,6 +186,28 @@ body .message h1 {
   padding-top: 0.3rem;
   font-size: 2rem;
   color: #EAE7DC;
+}
+body main .heroArea {
+  display: flex;
+  justify-content: center;
+}
+body main .heroArea h1 {
+  font-size: 6rem;
+  color: white;
+  align-self: center;
+  position: absolute;
+}
+body main .heroArea .hero {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+body main .heroArea .hero img {
+  max-width: 100%;
+}
+body main .products {
+  display: flex;
+  justify-content: center;
 }
 /* Variables */
 /*yeet*/
