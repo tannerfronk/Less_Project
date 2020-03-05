@@ -169,6 +169,7 @@ html {
 body {
   margin: auto;
   background-color: #D8C3A5;
+  font-family: 'Lato', sans-serif;
 }
 body .grayBox {
   height: 2.2rem;
@@ -183,31 +184,217 @@ body .message {
 body .message h1 {
   display: flex;
   justify-content: center;
-  padding-top: 0.3rem;
+  padding-top: 0.5rem;
   font-size: 2rem;
   color: #EAE7DC;
 }
-body main .heroArea {
+body .center {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body .center main {
+  max-width: 100%;
+}
+body .center main .heroArea {
   display: flex;
   justify-content: center;
 }
-body main .heroArea h1 {
+body .center main .heroArea h1 {
   font-size: 6rem;
   color: white;
   align-self: center;
   position: absolute;
 }
-body main .heroArea .hero {
+body .center main .heroArea .hero {
   background-color: black;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
-body main .heroArea .hero img {
+body .center main .heroArea .hero img {
   max-width: 100%;
 }
-body main .products {
+body .center main .products {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0rem;
+}
+body .center main .products .boxContainer {
+  height: 175px;
+  width: 250px;
+  position: relative;
   display: flex;
   justify-content: center;
+}
+body .center main .products .coverColor {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  background-color: gray;
+  opacity: 0.4;
+}
+body .center main .products .txtTitle {
+  position: absolute;
+  top: 35%;
+  color: #F2F1EF;
+  font-size: 1.7rem;
+  color: #EAE7DC;
+}
+body .center main .products .txt {
+  position: absolute;
+  top: 120px;
+  color: #F2F1EF;
+  font-size: 1.3rem;
+  background-color: #E85A4F;
+  padding: 0.5rem 1rem;
+}
+body .center main .products .txt:hover {
+  cursor: pointer;
+}
+body .center main .divBar {
+  height: 5rem;
+  border-top: 3px solid #8E8D8A;
+  border-bottom: 3px solid #8E8D8A;
+  border-radius: 1px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+body .center main .divBar .divText {
+  margin-top: 1.4rem;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  color: #8E8D8A;
+}
+body .center main .divBar .divShop {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  padding-top: 0.7rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+  background-color: #E85A4F;
+  color: #D8C3A5;
+  cursor: pointer;
+}
+body .center main .hero2 {
+  max-width: 100%;
+}
+body .center main .products2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0rem;
+}
+body .center main .products2 img {
+  max-width: 100%;
+}
+body .center main .products2 .boxContainer2 {
+  height: 275px;
+  width: 375px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+body .center main .products2 .coverColor2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  background-color: gray;
+  opacity: 0.6;
+}
+body .center main .products2 .txtTitle2 {
+  position: absolute;
+  top: 35%;
+  color: #F2F1EF;
+  font-size: 2.2rem;
+  color: #EAE7DC;
+}
+body .center main .products2 .txt2 {
+  position: absolute;
+  top: 13rem;
+  color: #F2F1EF;
+  font-size: 1.8rem;
+  background-color: #E85A4F;
+  padding: 0.5rem 1rem;
+}
+body .center main .products2 .txt2:hover {
+  cursor: pointer;
+}
+body .center main .hero3 {
+  max-width: 100%;
+  margin-bottom: 4rem;
+}
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer .footerInfo {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .footerInfo h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #E85A4F;
+}
+footer .footerInfo p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #8E8D8A;
+}
+footer .footerInfo a {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: #8E8D8A;
+}
+footer .footerInfo a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer .footerInfo .mainInfo {
+  display: flex;
+  flex-direction: column;
+}
+footer .footerInfo .learnMore {
+  display: flex;
+  flex-direction: column;
+}
+footer .footerInfo .connect {
+  display: flex;
+  flex-direction: column;
+}
+footer .mailingList {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+footer .mailingList a {
+  text-decoration: none;
+  color: #8E8D8A;
+}
+footer .mailingList a:hover {
+  text-decoration: underline;
+}
+footer .socialIcons {
+  max-width: 85px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+footer .socialIcons p:hover {
+  color: white;
 }
 /* Variables */
 /*yeet*/

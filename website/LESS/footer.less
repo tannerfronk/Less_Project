@@ -1,0 +1,72 @@
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
+        
+        .footerInfo {
+            margin: 3rem 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            h1{
+                font-size: 1.5rem;
+                margin-bottom: .5rem;
+                color: @fontMain;
+            }
+            p {
+                font-size: 1.2rem;
+                margin-bottom: .5rem;
+                color: @bodyText;
+            }
+            a {
+                font-size: 1.2rem;
+                margin-bottom: .5rem;
+                text-decoration: none;
+                color: @bodyText;
+            }
+            a:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            .mainInfo {
+                display: flex;
+                flex-direction: column;
+            }
+            .learnMore {
+                display: flex;
+                flex-direction: column;
+            }
+            .connect {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .mailingList {
+            display: flex;
+            justify-content: center;
+            font-size: 3rem;
+            margin-top: 5rem;
+            margin-bottom: 7rem;
+            
+            a{
+                text-decoration: none;
+                color: @bodyText;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+        .socialIcons {
+            max-width: 85px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+            
+            p:hover {
+                color: white;
+            }
+        }
+    }

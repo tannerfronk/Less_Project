@@ -1,55 +1,182 @@
 body {
     margin: auto;
     background-color: @backgroundColor;
+    font-family: 'Lato', sans-serif;
             
-        .grayBox {
-            height: 2.2rem;
-            max-width: 100%;
-            background-color: gray;
-        }
-        
-        .message {
-            height: 3rem;
-            max-width: 100%;
-            background-color: @fontMain;
-            
-            h1 {
-                display: flex;
-                justify-content: center;
-                padding-top: .3rem;
-                font-size: 2rem;
-                color: @misc;
-            }
-        }
-    main {
-         
-        .heroArea {
+    .grayBox {
+        height: 2.2rem;
+        max-width: 100%;
+        background-color: gray;
+    }
+
+    .message {
+        height: 3rem;
+        max-width: 100%;
+        background-color: @fontMain;
+
+        h1 {
             display: flex;
             justify-content: center;
+            padding-top: .5rem;
+            font-size: 2rem;
+            color: @misc;
+        }
+    }
+    
+    .center {
+        max-width: 1200px;
+        margin: 0 auto;
+    
+        main {
+            max-width: 100%;
 
-            h1 {
-                font-size: 6rem;
-                color: white;
-                align-self: center;
-                position: absolute;
+            .heroArea {
+                display: flex;
+                justify-content: center;
+
+                h1 {
+                    font-size: 6rem;
+                    color: white;
+                    align-self: center;
+                    position: absolute;
+                    }
+
+                .hero {
+                    background-color: black;
+                    display: flex;
+                    flex-direction: column;
+                    cursor: pointer;
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            .products {
+                display: flex;
+                justify-content: space-between;
+                margin: 2rem 0rem;
+
+                .boxContainer {
+                    height: 175px;
+                    width: 250px;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
                 }
 
-            .hero {
-                background-color: black;
-                display: flex;
-                flex-direction: column;
+                .coverColor {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    max-width: 100%;
+                    background-color: gray;
+                    opacity: .4;
+                }
+                .txtTitle {
+                    position: absolute;
+                    top: 35%;
+                    color: #F2F1EF;
+                    font-size: 1.7rem;
+                    color: @misc;
+                }
+                .txt {
+                    position: absolute;
+                    top: 120px;
+                    color: #F2F1EF;
+                    font-size: 1.3rem;
+                    background-color: @fontMain;
+                    padding: .5rem 1rem;
+                }
+                .txt:hover {
+                    cursor: pointer;
+                }
+            }
 
+            .divBar {
+                height: 5rem;
+                border-top: 3px solid @bodyText;
+                border-bottom: 3px solid @bodyText;
+                border-radius: 1px;
+                margin-bottom: 2rem;
+                display: flex;
+                justify-content: space-between;
+
+                .divText {
+                    margin-top: 1.4rem;
+                    margin-left: 1rem;
+                    font-size: 1.5rem;
+                    color: @bodyText;
+                }
+                .divShop {
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    margin-right: 1rem;
+                    padding-top: .7rem;
+                    padding-right: .5rem;
+                    padding-left: .5rem;
+                    font-size: 1.2rem;
+                    background-color: @fontMain;
+                    color: @backgroundColor;
+                    cursor: pointer;
+                }
+            }
+            .hero2 {
+                max-width: 100%;
+            }
+
+            .products2 {
+                display: flex;
+                justify-content: space-between;
+                margin: 2rem 0rem;
+                
                 img {
                     max-width: 100%;
                 }
+
+                .boxContainer2 {
+                        height: 275px;
+                        width: 375px;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                .coverColor2 {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    max-width: 100%;
+                    background-color: gray;
+                    opacity: .6;
+                }
+                .txtTitle2 {
+                    position: absolute;
+                    top: 35%;
+                    color: #F2F1EF;
+                    font-size: 2.2rem;
+                    color: @misc;
+                }
+                .txt2 {
+                    position: absolute;
+                    top: 13rem;
+                    color: #F2F1EF;
+                    font-size: 1.8rem;
+                    background-color: @fontMain;
+                    padding: .5rem 1rem;
+                }
+                .txt2:hover {
+                    cursor: pointer;
+                }
             }
-        }
-        
-        .products {
-            display: flex;
-            justify-content: center;
             
-            
+            .hero3 {
+                max-width: 100%;
+                margin-bottom: 4rem;
+            }
         }
     }
 }
