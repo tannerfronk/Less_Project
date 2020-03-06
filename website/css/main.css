@@ -151,8 +151,7 @@ html {
   display: flex;
   flex-direction: column;
   padding-left: 1.5rem;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 2.2rem;
   position: absolute;
 }
 @media (max-width: 710px) {
@@ -198,6 +197,10 @@ body {
   margin: auto;
   background-color: #D8C3A5;
   font-family: 'Lato', sans-serif;
+  /* Beginning of Home Page */
+  /* End of Home Page */
+  /* Beginning of Shop Page */
+  /* End of Shop Page */
 }
 body .grayBox {
   height: 2.2rem;
@@ -417,6 +420,45 @@ body .center main .products2 .txt2:hover {
 body .center main .hero3 {
   max-width: 100%;
   margin-bottom: 3.5rem;
+}
+body .shopContent {
+  display: flex;
+}
+body .shopContent .filterColumn {
+  width: 200px;
+}
+body .shopContent .filterColumn h1 {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  padding-left: 0.3rem;
+}
+body .shopContent .filterColumn .filterType {
+  display: flex;
+  flex-direction: column;
+}
+body .shopContent .filterColumn .filterType .filterTitle {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  padding-left: 0.3rem;
+}
+body .shopContent .filterColumn .filterType .filterOptions {
+  display: flex;
+  flex-direction: column;
+}
+body .shopContent .filterColumn .filterType .filterOptions div {
+  margin-bottom: 0.5rem;
+}
+body .shopContent .divider {
+  width: 1rem;
+  margin-left: 1rem;
+  border-left: solid 1px #8E8D8A;
+}
+body .shopContent .contentColumn .bikes {
+  display: flex;
+  justify-content: center;
 }
 footer {
   max-width: 1200px;
