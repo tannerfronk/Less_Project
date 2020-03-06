@@ -13,6 +13,9 @@ body {
         height: 3rem;
         max-width: 100%;
         background-color: @fontMain;
+        @media @max708 {
+                height: 2rem;
+            }
 
         h1 {
             display: flex;
@@ -20,6 +23,14 @@ body {
             padding-top: .5rem;
             font-size: 2rem;
             color: @misc;
+            @media @max1020 {
+                padding-top: .7rem;
+                font-size: 1.5rem;
+            }
+            @media @max708 {
+                padding-top: .5rem;
+                font-size: 1rem;
+            }
         }
     }
     
@@ -39,7 +50,14 @@ body {
                     color: white;
                     align-self: center;
                     position: absolute;
+                    @media @max1020 {
+                    font-size: 4rem;
                     }
+                    @media @max708 {
+                        top: 470px;
+                        font-size: 3rem;
+                    }
+                }
 
                 .hero {
                     background-color: black;
@@ -52,18 +70,25 @@ body {
                     }
                 }
             }
-
+            
             .products {
                 display: flex;
                 justify-content: space-between;
                 margin: 2rem 0rem;
-
+                @media @max1020 {
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                }
+                
                 .boxContainer {
                     height: 175px;
                     width: 250px;
                     position: relative;
                     display: flex;
                     justify-content: center;
+                    @media @max1020 {
+                        margin-top: 1rem;
+                    }
                 }
 
                 .coverColor {
@@ -75,6 +100,7 @@ body {
                     background-color: gray;
                     opacity: .4;
                 }
+                
                 .txtTitle {
                     position: absolute;
                     top: 35%;
@@ -83,12 +109,9 @@ body {
                     color: @misc;
                 }
                 .txt {
-                    position: absolute;
+                    .shopButtonSmall();
                     top: 120px;
-                    color: #F2F1EF;
                     font-size: 1.3rem;
-                    background-color: @fontMain;
-                    padding: .5rem 1rem;
                 }
                 .txt:hover {
                     cursor: pointer;
@@ -103,24 +126,30 @@ body {
                 margin-bottom: 2rem;
                 display: flex;
                 justify-content: space-between;
+                @media @max708 {
+                    border-top: 2px solid @bodyText;
+                    border-bottom: 2px solid @bodyText;
+                }
 
                 .divText {
-                    margin-top: 1.4rem;
+                    margin-top: 1.5rem;
                     margin-left: 1rem;
                     font-size: 1.5rem;
                     color: @bodyText;
+                    @media @max708 {
+                        font-size: 1.2rem;
+                        margin-top: 1.7rem;
+                    }
                 }
                 .divShop {
                     margin-top: 1rem;
                     margin-bottom: 1rem;
                     margin-right: 1rem;
-                    padding-top: .7rem;
-                    padding-right: .5rem;
-                    padding-left: .5rem;
                     font-size: 1.2rem;
                     background-color: @fontMain;
                     color: @backgroundColor;
                     cursor: pointer;
+                    border: none;
                 }
             }
             .hero2 {
@@ -131,6 +160,11 @@ body {
                 display: flex;
                 justify-content: space-between;
                 margin: 2rem 0rem;
+                @media @max1145 {
+                    margin-top: 1rem;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                }
                 
                 img {
                     max-width: 100%;
@@ -142,7 +176,10 @@ body {
                         position: relative;
                         display: flex;
                         justify-content: center;
+                        @media @max1145 {
+                            margin-top: 1rem;
                     }
+                }
 
                 .coverColor2 {
                     position: absolute;
@@ -161,12 +198,9 @@ body {
                     color: @misc;
                 }
                 .txt2 {
-                    position: absolute;
+                    .shopButtonLarge();
                     top: 13rem;
-                    color: #F2F1EF;
                     font-size: 1.8rem;
-                    background-color: @fontMain;
-                    padding: .5rem 1rem;
                 }
                 .txt2:hover {
                     cursor: pointer;
@@ -175,7 +209,7 @@ body {
             
             .hero3 {
                 max-width: 100%;
-                margin-bottom: 4rem;
+                margin-bottom: 3.5rem; 
             }
         }
     }
