@@ -26,30 +26,24 @@
     
     .navBar {
         display: flex;
-        width: 65rem;
+        width: 40rem;
         justify-content: space-between;
         padding-top: @navPadding;
         padding-bottom: @navPadding;
-        padding-left: 10rem;
+        margin-left: 12rem;
         margin-right: 1%;
         color: @bodyText;
-        @media @max1020 {
-            width: 45rem;
-        }
         @media @max708 {
             flex-direction: column;
             padding-top: 9rem;
-            padding-left: @leftPadding;
             padding-bottom: 0;
+            margin-left: @leftPadding;
         }
         
         a {
             color: @bodyText;
             text-decoration: none;
-            font-size: 1.2rem;
-            @media @max1020 {
-                font-size: 1rem;
-            }
+            font-size: 1rem;
             @media @max708 {
                 flex-wrap: wrap;
                 margin-bottom: 1rem;
