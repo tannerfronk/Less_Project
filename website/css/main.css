@@ -514,9 +514,52 @@ body .shopContent .divider {
   margin-left: 1rem;
   border-left: solid 1px #8E8D8A;
 }
+body .shopContent .contentColumn {
+  width: 1000px;
+}
+body .shopContent .contentColumn .breadcrumbs {
+  margin-top: 3rem;
+}
+body .shopContent .contentColumn .breadcrumbs .breadLink {
+  color: #E85A4F;
+}
 body .shopContent .contentColumn .bikes {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 2rem;
   display: flex;
-  justify-content: center;
+}
+body .shopContent .contentColumn .topDivider {
+  border-bottom: 1px solid #8E8D8A;
+  margin-bottom: 1.5rem;
+}
+body .shopContent .contentColumn .ddLabel {
+  margin-top: 10rem;
+  color: #E85A4F;
+}
+body .shopContent .contentColumn .dropDown {
+  margin-left: 1rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+body .shopContent .contentColumn .shopContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body .shopContent .contentColumn .shopContent .bikeTile {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+body .shopContent .contentColumn .shopContent .bikeTile p {
+  margin-top: 0.25rem;
+  text-align: center;
+}
+body .shopContent .contentColumn .shopContent .bikeTile .price {
+  color: #E85A4F;
+  margin-top: 0.75rem;
 }
 footer {
   max-width: 1200px;

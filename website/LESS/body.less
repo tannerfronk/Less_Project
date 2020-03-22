@@ -318,11 +318,60 @@ body {
         }
         
         .contentColumn {
+            width: 1000px;
             
+            .breadcrumbs {
+                
+                margin-top: 3rem;
+                
+                .breadLink {
+                    color: @fontMain;
+                }
+            }
             
             .bikes {
+                margin-top: 2rem;
+                padding-bottom: 2rem;
+                font-size: 2rem;
                 display: flex;
-                justify-content: center;
+            }
+            .topDivider {
+                border-bottom: 1px solid @bodyText;
+                margin-bottom: 1.5rem;
+            }
+            
+            .ddLabel {
+                margin-top: 10rem;
+                color: @fontMain;
+            }
+            .dropDown {
+                margin-left: 1rem;
+                font-size: 1rem;
+                padding: .5rem 1rem;
+            }
+            
+            .shopContent {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                
+                .bikeTile {
+                    margin-top: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    p {
+                        margin-top: .25rem;
+                        text-align: center;
+                    }
+                    .price {
+                        color: @fontMain;
+                        margin-top: .75rem;
+                    }
+                    
+                }
+                
             }
         }
     }
