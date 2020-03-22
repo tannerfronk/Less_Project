@@ -215,7 +215,6 @@ body .message {
 @media (max-width: 710px) {
   body .message {
     height: 2rem;
-    margin-top: 1rem;
   }
 }
 body .message h1 {
