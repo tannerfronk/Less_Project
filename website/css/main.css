@@ -435,8 +435,20 @@ body .center main .hero3 {
 body .shopContent {
   display: flex;
 }
+@media (max-width: 710px) {
+  body .shopContent {
+    flex-direction: column;
+  }
+}
 body .shopContent .filterColumn {
   width: 200px;
+}
+@media (max-width: 710px) {
+  body .shopContent .filterColumn {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }
 body .shopContent .filterColumn h1 {
   margin-top: 3rem;
@@ -447,6 +459,13 @@ body .shopContent .filterColumn .filterType {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 710px) {
+  body .shopContent .filterColumn .filterType {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 body .shopContent .filterColumn .filterType .filterTitle {
   padding-top: 1rem;
   margin-bottom: 0.75rem;
@@ -456,9 +475,21 @@ body .shopContent .filterColumn .filterType .filterTitle {
   border-top: 1px solid #8E8D8A;
   color: #E85A4F;
 }
+@media (max-width: 710px) {
+  body .shopContent .filterColumn .filterType .filterTitle {
+    padding: 2rem;
+    border: none;
+    border: 1px solid #8E8D8A;
+  }
+}
 body .shopContent .filterColumn .filterType .filterOptions {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 710px) {
+  body .shopContent .filterColumn .filterType .filterOptions {
+    display: none;
+  }
 }
 body .shopContent .filterColumn .filterType .filterOptions div {
   margin-bottom: 0.5rem;
@@ -516,6 +547,7 @@ body .shopContent .divider {
 }
 body .shopContent .contentColumn {
   width: 1000px;
+  max-width: 100%;
 }
 body .shopContent .contentColumn .breadcrumbs {
   margin-top: 3rem;
@@ -548,10 +580,23 @@ body .shopContent .contentColumn .shopContent {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 710px) {
+  body .shopContent .contentColumn .shopContent {
+    justify-content: center;
+  }
+}
 body .shopContent .contentColumn .shopContent .bikeTile {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 710px) {
+  body .shopContent .contentColumn .shopContent .bikeTile {
+    padding-right: 1rem;
+  }
+}
+body .shopContent .contentColumn .shopContent .bikeTile img {
+  max-width: 100%;
 }
 body .shopContent .contentColumn .shopContent .bikeTile p {
   margin-top: 0.25rem;

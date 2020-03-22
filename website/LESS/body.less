@@ -228,9 +228,17 @@ body {
     
     .shopContent {
         display: flex;
+        @media @max708 {
+            flex-direction: column;
+        }
         
         .filterColumn {
             width: 200px;
+            @media @max708 {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    width: 100%;
+                }
             
             h1 {
                 margin-top: 3rem;
@@ -241,6 +249,11 @@ body {
             .filterType {
                 display: flex;
                 flex-direction: column;
+                @media @max708 {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                }
                 
                 .filterTitle {
                     padding-top: 1rem;
@@ -250,10 +263,18 @@ body {
                     font-size: 1.2rem;
                     border-top: 1px solid @bodyText;
                     color: @fontMain;
+                    @media @max708 {
+                        padding: 2rem;
+                        border: none;
+                        border: 1px solid @bodyText;
+                    }
                 }
                 .filterOptions {
                     display: flex;
                     flex-direction: column;
+                    @media @max708 {
+                        display: none;
+                    }
                     
                     div {
                         margin-bottom: .5rem;
@@ -319,6 +340,7 @@ body {
         
         .contentColumn {
             width: 1000px;
+            max-width: 100%;
             
             .breadcrumbs {
                 
@@ -355,11 +377,21 @@ body {
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-between;
+                @media @max708 {
+                    justify-content: center;
+                }
                 
                 .bikeTile {
                     margin-top: 2rem;
                     display: flex;
                     flex-direction: column;
+                    @media @max708 {
+                        padding-right: 1rem;
+                    }
+                    
+                    img {
+                        max-width: 100%;
+                    }
                     
                     p {
                         margin-top: .25rem;
