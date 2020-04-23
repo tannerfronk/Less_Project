@@ -13,7 +13,7 @@
 <body>
     <header class="header">
         <div class="logo">
-            <img src="images/bike-edited.png">
+            <img id="logoImg" src="images/bike-edited.png">
         </div>
         <nav class="navBar">
             <a href="shop.html">Shop</a>
@@ -33,9 +33,9 @@
     <main>
         
     <section class="heroArea">
-        <h1>&nbsp;&nbsp;FIND YOUR<br/>DREAM BIKE<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TODAY</h1>
+        <h1 id="heroText">&nbsp;&nbsp;FIND YOUR<br/>DREAM BIKE<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TODAY</h1>
         <div class="hero">
-        <a href="shop.html"><img src="images/hero.png"></a>
+        <a href="shop.html"  id="hero" ><img src="images/hero.png"></a>
         </div>
 
     </section>
@@ -43,25 +43,25 @@
     <section>
         <div class="products">
             
-            <div class="boxContainer">
+            <div class="boxContainer" id="boxContainer">
                 <div class="coverColor"></div>
                 <p class="txtTitle">BICYCLES</p>
                 <a href="shop.html" class="txt">SHOP</a>
                 <img class="images" src="images/shop1.jpg">
             </div>
-            <div class="boxContainer">
+            <div class="boxContainer" id="boxContainer2">
                 <div class="coverColor"></div>
                 <p class="txtTitle">ACCESSORIES</p>
                 <a href="shop.html" class="txt">SHOP</a>
                 <img class="images" src="images/shop2.jpg">
             </div>
-            <div class="boxContainer">
+            <div class="boxContainer" id="boxContainer">
                 <div class="coverColor"></div>
                 <p class="txtTitle">COMPONENTS</p>
                 <a href="shop.html" class="txt">SHOP</a>
                 <img class="images" src="images/shop3.jpg">
             </div>
-            <div class="boxContainer">
+            <div class="boxContainer" id="boxContainer">
                 <div class="coverColor"></div>
                 <p class="txtTitle">CLOTHING</p>
                 <a href="shop.html" class="txt">SHOP</a>
@@ -87,19 +87,19 @@
     <section>
         <div class="products2">
         
-            <div href="#" class="boxContainer2">
+            <div href="#" class="boxContainer2" id="boxContainer">
                 <div class="coverColor2"></div>
                 <p class="txtTitle2">BIKE REPAIR</p>
                 <a  href="shop.html" class="txt2">SHOP</a>
                 <img class="images" src="images/repair.jpg">
             </div>    
-            <div href="#" class="boxContainer2">
+            <div href="#" class="boxContainer2" id="boxContainer">
                 <div class="coverColor2"></div>
                 <p class="txtTitle2">BIKE FITTING</p>
                 <a href="shop.html" class="txt2">SHOP</a>
                 <img class="images" src="images/fitting.jpg">
             </div>  
-            <div href="#" class="boxContainer2">
+            <div href="#" class="boxContainer2" id="boxContainer">
                 <div class="coverColor2"></div>
                 <p class="txtTitle2">PICK UP & DELIVERY</p>
                 <a href="shop.html" class="txt2">SHOP</a>
@@ -167,4 +167,6 @@
     </footer>
 	
 </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script> <!-- GSAP CDN -->
+    <script src="js/gsap.js"></script> <!-- GSAP Javascript -->
 </html>
